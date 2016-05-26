@@ -1,0 +1,19 @@
+	<div class="useroverview-group">
+		<div #dd=dropdown_directive style="width:100%" 
+        class="btn-group dropdown" 
+        dropdown="" 
+        dropdownKeyboardNav="true">	
+			
+			<button style="width:100%" class="btn btn-light dropdown-toggle useroverview-is_empty" placeholder="Filter usergroup" dropdownToggle="" id="single-button" type="button" aria-haspopup="true" aria-expanded="false">
+				<span>{{placeholder}}</span>
+				<span class="caret"></span>
+			</button>
+			
+			<ul aria-labelledby="single-button" class="dropdown-menu" role="menu" dropdownMenu="">				
+				<li *ngFor="let s_item of items" menuItem role="menuitem" [value]="s_item">
+					<a class="dropdown-item" href="javascript:;">{{s_item}}</a>
+				</li>								
+			</ul>
+			
+		</div>
+	</div>	

@@ -1,0 +1,13 @@
+<div class="menu-container">
+	<div *ngFor="let item of menu.items">
+		<div [ngClass]="{active:isSelected(item)}" (click)="onSelect(item)" class="menu_item">
+			<span class="icon {{item.icon}}"></span>
+			<span class="menu_title">{{item.title}}</span>		
+		</div>
+		<div *ngIf="hasOpenedSubItems(item)" class="menu_sub_items">
+				<div *ngFor="let subItem of item.subSections" (click)="onSelect(subItem)">
+						<span [ngClass]="{active_sub:isSelected(subItem)}" class="menu_sub_item">{{subItem.title}}</span>
+				</div>
+		</div>
+	</div>	
+</div>

@@ -1,0 +1,83 @@
+.useroverview-container{
+	background: white;
+	overflow: auto;
+	position: fixed;
+  top: 50px;
+  right: 0;
+  left: 200px;
+  bottom: 0;
+}
+
+.useroverview-container .subheader-content>*{
+	margin-bottom:5px;
+}
+.header{
+}
+
+.content{
+	background: white;
+	box-sizing: border-box;
+	padding:30px;
+}
+
+.content .panel-body {
+	background: #F8F8F8;
+}
+
+.useroverview-group{
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+
+.useroverview-search{
+	display: inline-block;
+	width: 349px;
+	vertical-align: middle;
+	margin-right: 7px;
+}
+
+.useroverview-search .btn{
+	padding: 7px 12px;
+    border: 1px solid #c5c5c5;
+}
+
+.useroverview-search input{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    
+}
+
+.useroverview-advanced_toggle{
+	display: inline-block;
+	vertical-align: middle;	
+	margin-right: 5px;
+}
+
+.useroverview-add-user{
+	display: inline-block;
+	vertical-align: middle;	
+}
+
+.useroverview-advanced_toggle .icon{
+	margin-right:2px;
+}
+.useroverview-advanced_toggle .btn{
+	padding-right: 12px;
+	font-weight: 400;
+}
+
+.useroverview-advanced-footer{
+	padding: 9px 20px;
+	border-top: 1px solid #c5c5c5;
+	font-size: 0;
+	
+}
+
+.useroverview-advanced-footer > * {
+	margin-right:12px;
+}
+
+.useroverview-advanced-body{
+	padding:20px 20px 19px 19px;
+}

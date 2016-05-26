@@ -1,0 +1,67 @@
+<div class="useroverview-container">
+	<as-sub-header [title]="title" class="header">
+	
+	<div class="useroverview-group">
+		<div class="btn-group dropdown" dropdown="" dropdownKeyboardNav="true" multiselect="true">	
+			<button style="width:140px" class="btn btn-light dropdown-toggle useroverview-is_empty" placeholder="Filter usergroup" dropdownToggle="" id="single-button" type="button" aria-haspopup="true" aria-expanded="false">
+				<span>Filter usergroup</span>
+				<span class="caret"></span>
+			</button>
+			<ul aria-labelledby="single-button" class="dropdown-menu" role="menu" dropdownMenu="" >
+				
+				<li menuItem role="menuitem" value="Captain"><a class="dropdown-item" href="javascript:;">Captain</a></li>
+				<li menuItem role="menuitem" value="Colonel"><a class="dropdown-item" href="javascript:;">Colonel</a></li>
+				<li menuItem role="menuitem" value="General"><a class="dropdown-item" href="javascript:;">General</a></li>
+				<li menuItem role="menuitem" value="Lieutenant"><a class="dropdown-item" href="javascript:;">Lieutenant</a></li>
+				<li menuItem role="menuitem" value="Officer"><a class="dropdown-item" href="javascript:;">Officer</a></li>
+								
+			</ul>
+		</div>
+	</div>
+		
+		<div class="useroverview-search">
+			<div class="input-group">
+				<input type="text" class="form-control" placeholder="Search for user">
+				<span class="input-group-btn">
+					<button class="btn btn-default" type="button">
+						<span class="icon insided-search"></span>
+					</button>
+				</span>
+			</div>
+    </div>
+		
+		<div class="useroverview-advanced_toggle">
+			<button type="button" class="btn btn-inverse" (click)="advancedSearchToggle()" btnCheckbox btnCheckboxTrue="1" btnCheckboxFalse="0">
+					<span class="icon insided-equal"></span>
+					Advanced filter
+			</button>
+		</div>
+		
+		<div class="useroverview-add-user">
+			<button type="button" class="btn btn-primary">					
+					Add user
+			</button>
+		</div>
+		
+	</as-sub-header>
+		
+	<div class="content">
+		<div *ngIf="advancedSearch"  class="panel panel-default">
+			<div class="panel-heading">Advanced filter</div>			
+			<div class="panel-body">
+					<div class="useroverview-advanced-body">
+						<as-user-filter #filter=user_filter_component></as-user-filter>
+						<div>
+							<button type="button" class="btn btn-primary" (click)="addRow()">Add row</button>
+						</div>						
+					</div>
+			
+					<div class="useroverview-advanced-footer">
+						<button type="button" class="btn btn-success">Apply</button>
+						<button type="button" class="btn btn-light">Clear filters</button>
+						<button type="button" class="btn btn-cancel">Close</button>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>

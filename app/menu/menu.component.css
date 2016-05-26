@@ -1,0 +1,39 @@
+.menu-container{	
+	position:relative;	
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.menu_item{
+	padding: 12px 15px 11px 15px;
+	border-bottom:1px solid #C5C5C5;
+}
+
+.menu_item:hover {
+	background: #F2F2F2;
+}
+
+.menu_title{
+	padding-left: 11px;  
+}
+
+.active{
+	border-left:4px solid #1DADF4;
+	padding-left: 11px;
+}
+
+.menu_sub_items{	
+	padding: 10px 15px 10px 44px;
+	border-bottom:1px solid #C5C5C5;
+	line-height: 24px;
+  font-size: 12px;	
+}
+
+.menu_sub_item:hover{
+	color: #1DADF4;
+}
+
+.active_sub{
+	font-weight:bold;
+	color: inherit !important;
+}

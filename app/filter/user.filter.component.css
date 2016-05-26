@@ -1,0 +1,15 @@
+.filter-container {
+	
+}
+.filter-row{
+	vertical-align: super;
+}
+
+.filter-delete-container{	
+	display: inline-block;
+	vertical-align: top;	
+}
+
+.filter-delete-container .icon{
+    margin: 2px -1px 1px 0px;
+}

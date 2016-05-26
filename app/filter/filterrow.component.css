@@ -1,0 +1,27 @@
+.filterrow-container{
+	display:inline-block;
+	margin-bottom:10px;
+	font-size: 0;
+}
+.filterrow-container>*{
+	margin-right:10px;
+}
+
+.filterrow-key-container{
+	display: inline-block;
+	width:180px;	
+}
+
+.filterrow-operand-container{
+	display: inline-block;
+	width:180px;
+}
+
+.filterrow-value-container{
+	display: inline-block;
+	vertical-align: middle;
+	width:180px;
+}
+.filterrow-value-container input{
+	width:100%;
+}

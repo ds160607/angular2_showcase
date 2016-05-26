@@ -1,0 +1,10 @@
+<div class="filter-container">	
+	<div *ngFor="let row of rows">
+		<as-filter-row [filter]="row.filter" class="filter-row" ></as-filter-row>
+		<div class="filter-delete-container">
+			<button class="btn btn-danger" (click)="removeRow(row)">
+				<span class="icon insided-cross"></span>
+			</button>
+		</div>
+	</div>
+</div>

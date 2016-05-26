@@ -1,0 +1,16 @@
+.subheader-container{
+	background: #F8F8F8;
+	min-height:90px;
+	border-bottom: 1px solid #C5C5C5;
+	padding: 30px 30px 22px 30px;
+}
+
+.subheader-title{
+	float:left;
+  font-size: 26px;
+}
+
+
+.subheader-content{
+	float:right;
+}
